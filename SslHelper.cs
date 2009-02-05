@@ -20,6 +20,8 @@ namespace Pluralsight.Utilities
 {
 	/// <summary>
 	/// Class to aid the transition of asp.net pages in and out of ssl.
+	/// Use of ssl can be disabled to ease testing by setting the app 
+	/// config key EnableSSL to false.
 	/// http://github.com/timabell/sslhelper
 	/// http://www.pluralsight.com/community/blogs/keith/archive/2009/01/17/sslhelper-get-help-running-a-partial-ssl-website-in-asp-net.aspx
 	/// </summary>
