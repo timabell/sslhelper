@@ -9,8 +9,20 @@
 // His class was called SslTools.
 // I made several improvements and renamed it SslHelper.
 //   - Keith Brown, http://www.pluralsight.com/keith/
+
+// Further work by Tim Abell, 2009
+
+using System;
+using System.Configuration;
+using System.Web;
+
 namespace Pluralsight.Utilities
 {
+	/// <summary>
+	/// Class to aid the transition of asp.net pages in and out of ssl.
+	/// http://github.com/timabell/sslhelper
+	/// http://www.pluralsight.com/community/blogs/keith/archive/2009/01/17/sslhelper-get-help-running-a-partial-ssl-website-in-asp-net.aspx
+	/// </summary>
 	public class SslHelper
 	{
 		public interface IApplication
