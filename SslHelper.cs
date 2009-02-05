@@ -229,9 +229,9 @@ namespace Pluralsight.Utilities
 			// SSL is enabled by default,
 			// unless you add an AppSetting for EnableSSL
 			// and set it to "false"
-			return !false.ToString().Equals(
-				ConfigurationManager.AppSettings["EnableSSL"],
-				StringComparison.InvariantCultureIgnoreCase);
+			if (String.IsNullOrEmpty(ConfigurationManager.AppSettings["EnableSSL"]))
+				return true;
+			return Boolean.Parse(ConfigurationManager.AppSettings["EnableSSL"]);
 		}
 
 		public static string StripQueryStringFromRelativeUrl(
